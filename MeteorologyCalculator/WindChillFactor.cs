@@ -13,12 +13,6 @@ namespace MeteorologyCalculator
     /// </summary>
     public class WindChillFactor
     {
-        public double WindChillCelsius => CalculateWindChillFactor(Temperature.Scale.Celsius);
-
-        public double WindChillFahrenheit => CalculateWindChillFactor(Temperature.Scale.Fahrenheit);
-
-        public double WattsPerMeterSquared => CalculateWattsPerMeterSquared();
-
         public Temperature Temperature { get; }
         public WindSpeed Wind { get; }
 
@@ -38,7 +32,7 @@ namespace MeteorologyCalculator
             Wind = wind;
         }
 
-        private double CalculateWindChillFactor(Temperature.Scale resultScale)
+        public double CalculateWindChillFactor(Temperature.Scale resultScale)
         {
             double result = 35.74 +
                 (0.6215 * Temperature.Fahrenheit) -
@@ -56,7 +50,7 @@ namespace MeteorologyCalculator
             }
         }
 
-        private double CalculateWattsPerMeterSquared()
+        public double CalculateWattsPerMeterSquared()
         {
             return (12.1452 + 11.6222 * Math.Sqrt(Wind.MetersPerSecond) -
                 1.16222 * Wind.MetersPerSecond) *
