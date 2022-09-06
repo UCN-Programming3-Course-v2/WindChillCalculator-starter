@@ -11,14 +11,14 @@ namespace MeteorologyCalculator
     /// </summary>
     public class WindSpeed
     {
-        private readonly double _speed;
+        private readonly float _speed;
         private readonly Unit _unit;
 
-        public double MilesPerHour => _unit == Unit.MilesPerHour ? _speed : _speed * 2.23694;
+        public float MilesPerHour => _unit == Unit.MilesPerHour ? _speed : _speed * 2.23694F;
 
-        public double MetersPerSecond => _unit == Unit.MeterPerSecond ? _speed : _speed * 0.44704;
+        public float MetersPerSecond => _unit == Unit.MeterPerSecond ? _speed : _speed * 0.44704F;
 
-        public WindSpeed(double speed, Unit unit)
+        public WindSpeed(float speed, Unit unit)
         {
             _speed = speed;
             _unit = unit;

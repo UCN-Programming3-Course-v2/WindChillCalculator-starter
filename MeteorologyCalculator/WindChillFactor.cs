@@ -18,7 +18,7 @@ namespace MeteorologyCalculator
 
         public WindChillFactor(Temperature temperature, WindSpeed wind)
         {
-            if (temperature.Fahrenheit > 50)
+            if (temperature.Fahrenheit >= 50)
             {
                 throw new MeteorologyException("Temperature too high");
             }

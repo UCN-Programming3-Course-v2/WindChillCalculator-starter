@@ -28,12 +28,12 @@ namespace MeteorologyCalculator
 
         internal static double ConvertFahrenheitToCelsius(double temperature)
         {
-            return (5d / 9d) * (temperature - 32);
+            return Math.Round((5d / 9d) * (temperature - 32), 1);
         }
 
         internal static double ConvertCelsiusToFahrenheit(double temperature)
         {
-            return (9d / 5d) * temperature + 32;
+            return Math.Round((9d / 5d) * temperature + 32, 1);
         }
     }
 }

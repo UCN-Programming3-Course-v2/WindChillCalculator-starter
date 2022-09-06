@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeteorologyCalculator", "MeteorologyCalculator\MeteorologyCalculator.csproj", "{BAB01840-7E65-4F3E-AE8F-92B4984898DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeteorologyCalculator", "MeteorologyCalculator\MeteorologyCalculator.csproj", "{BAB01840-7E65-4F3E-AE8F-92B4984898DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindChillCalculatorConsole", "WindChillCalculatorConsole\WindChillCalculatorConsole.csproj", "{25ED95F1-2E42-4F65-BE06-F886F8BC3BFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindChillCalculatorConsole", "WindChillCalculatorConsole\WindChillCalculatorConsole.csproj", "{25ED95F1-2E42-4F65-BE06-F886F8BC3BFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeteorologyTests", "MeteorologyTests\MeteorologyTests.csproj", "{3A549D1F-305A-4313-8533-90BF6D465EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{25ED95F1-2E42-4F65-BE06-F886F8BC3BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25ED95F1-2E42-4F65-BE06-F886F8BC3BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25ED95F1-2E42-4F65-BE06-F886F8BC3BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A549D1F-305A-4313-8533-90BF6D465EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A549D1F-305A-4313-8533-90BF6D465EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A549D1F-305A-4313-8533-90BF6D465EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A549D1F-305A-4313-8533-90BF6D465EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
